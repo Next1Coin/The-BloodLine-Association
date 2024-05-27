@@ -13,7 +13,7 @@ async function checkPassword() {
 
     if (result.success) {
         document.getElementById('login-form').style.display = 'none';
-        document.getElementById('protected-content').style.display = 'block';
+        document.getElementById('protected-content').classList.add('visible');
     } else {
         document.getElementById('error-message').innerText = 'Incorrect password. Please try again.';
         document.getElementById('error-message').style.display = 'block';
