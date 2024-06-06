@@ -1,22 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
-</head>
-<body>
-    <div id="login-form">
-        <h1>Please Enter Password</h1>
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Submit</button>
-        <p id="error-message" style="display: none;">Incorrect password. Please try again.</p>
-    </div>
-    <div id="protected-content" class="hidden">
-        <h1>Welcome to the Protected Content!</h1>
-        <p>This content is protected by a password.</p>
-    </div>
-</body>
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Protected Page</title>         
+        <link rel="stylesheet" href="styles.css"> 
+        <script src="main.js" defer></script>         
+    </head>     
+    <body>          
+        <div id="protected-content" class="hidden">
+
+	<h1>Welcome to the officia<span style="font-family: Arial, Helvetica, sans-serif;">l website </span>of The BloodLine Association.</h1>
+
+	<p>You can go and get to know about a lot of things about our association by clicking the links below:</p>
+
+	<ul style="list-style-type: square;">
+		<li style="font-size: 24px;"><a href="http://constitution.html" class="fr-strong"><span style="color: rgb(0, 0, 0);">Constitution</span></a></li>
+		<li style="font-size: 24px;"><span style="color: rgb(0, 0, 0);"><a href="http://history-of-tbl-and-tba.html" class="fr-strong">History of The BloodLine (Association)</a></span></li>
+		<li style="color: rgb(0, 0, 0); font-size: 24px;"><a href="http://intro.html" class="fr-strong">Brief Introduction of TBA</a></li>
+		<li style="color: rgb(0, 0, 0); font-size: 24px;"><a href="http://members.html" class="fr-strong">Members</a></li>
+	</ul>
+</div>
+        <div id="login-form"> 
+            <h1>Please Enter Password</h1> 
+            <input type="password" id="password" placeholder="Password"> 
+            <button onclick="checkPassword()">Submit</button>             
+            <p id="error-message" style="display: none;">Incorrect password. Please try again.</p> 
+        </div>
+    </body>     
 </html>
